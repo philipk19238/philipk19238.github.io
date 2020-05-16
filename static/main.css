@@ -192,7 +192,7 @@ margin: 0;
   font-weight: 300;
 }
 
-.list-group a {
+.list-group button {
   border-left: 3px solid WhiteSmoke;
   border-top: none;
   border-right: none;
@@ -203,7 +203,7 @@ margin: 0;
 
 }
 
-.list-group a:hover {
+.list-group button:hover {
   color: #ff2681;
   background-color:WhiteSmoke;
 
@@ -247,3 +247,5 @@ margin: 0;
 .fa-facebook:hover{
   color: #2867B2;
 }
+
+button:focus {outline:0;}
