@@ -14,16 +14,22 @@
 <body>
 
 	<div class="container-fluid d-flex justify-content-center">
-		<div class="spinner d-none" style="margin-top: 40vh;" id="screen-loader">
-		  <div class="rect1"></div>
-		  <div class="rect2"></div>
-		  <div class="rect3"></div>
-		  <div class="rect4"></div>
-		  <div class="rect5"></div>
+
+		<div class="sk-cube-grid" style="margin-top: 40vh;" id="screen-loader">
+		  <div class="sk-cube sk-cube1"></div>
+		  <div class="sk-cube sk-cube2"></div>
+		  <div class="sk-cube sk-cube3"></div>
+		  <div class="sk-cube sk-cube4"></div>
+		  <div class="sk-cube sk-cube5"></div>
+		  <div class="sk-cube sk-cube6"></div>
+		  <div class="sk-cube sk-cube7"></div>
+		  <div class="sk-cube sk-cube8"></div>
+		  <div class="sk-cube sk-cube9"></div>
 		</div>
+
 	</div>
 	
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-wrapper">
+	<nav class="navbar navbar-expand-lg sticky-top d-none" id="navbar-wrapper" style="background-color: white;">
 	
 		<a href="#main-page" class="navbar-brand">
 			<img src="https://lh3.googleusercontent.com/proxy/bfH3tZU2IxrUUEdhzpQKajVe7Eajj8-JhW_9z5ATIUSrYK-EUJRZm59sri7k2a4mJ2jMfWbP3X3DrhtJwtl6pmWk83IuV5I2YnNaHBDOVKeZ62rfDO6wlAs" style="height: 80px; width: auto; filter: hue-rotate(65deg);">
@@ -32,10 +38,10 @@
 		<div class="container d-flex justify-content-end">
 			<ul class="nav" id="navbar-links">
 			  <li class="nav-item">
-			    <a class="nav-link" href="about">About</a>
+			    <a class="nav-link" href="#about">About</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="experience">Experience</a>
+			    <a class="nav-link" href="#experience">Experience</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link" href="#">Projects</a>
@@ -48,7 +54,7 @@
 	</nav>
 
 
-	<div class="jumbotron" id="main-page">
+	<div class="jumbotron d-none" id="main-page">
 		<div class="container">
 			<div class="row">
 				<div class="col-flex" id="title-text">
@@ -84,7 +90,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron mt-5" id="about">
+	<div class="jumbotron mt-5 d-none" id="about">
 		<div class="container">
 			<h1 id="about" class="sub-header">01. About Me</h1>
 		</div>
@@ -135,7 +141,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron mb-5 mt-5" id="experience">
+	<div class="jumbotron mb-5 mt-5 d-none" id="experience">
 		<div class="container">
 			<h1 class="sub-header" style="text-align: center;">02. Where I've Worked</h1>
 		</div>
@@ -219,10 +225,25 @@
 		setTimeout(function(){
 
 		var loading = document.getElementById('screen-loader');
+
+		var main = document.getElementById('main-page');
+
+		var about = document.getElementById('about');
+
+		var experience = document.getElementById('experience');
+
+		var navbar = document.getElementById('navbar-wrapper');
+
 		loading.classList.add('d-none');
 
-		var page = document.getElementById('main-page');
-		page.classList.remove('d-none');
+		main.classList.remove('d-none');
+
+		about.classList.remove('d-none');
+
+		experience.classList.remove('d-none');
+
+		navbar.classList.remove('d-none');
+
 		}, 3000);
 
 		function show_elem(id){
@@ -253,6 +274,23 @@
 
 			}
 
+		}
+
+		var prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() {
+
+		  var currentScrollPos = window.pageYOffset;
+
+		  if (prevScrollpos > currentScrollPos) {
+		    document.getElementById("navbar-wrapper").style.top = "0";
+		  } 
+
+		  else {
+		    document.getElementById("navbar-wrapper").style.top = "-200px";
+		  }
+
+		  prevScrollpos = currentScrollPos;
 		}
 
 	</script>
