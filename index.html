@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/acebc5d574.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;&family=Hepta+Slab&display=swap" rel="stylesheet">
+	<title>Main Page</title>
+</head>
+<body>
+
+	<div class="container-fluid d-flex justify-content-center">
+		<div class="spinner d-none" style="margin-top: 40vh;" id="screen-loader">
+		  <div class="rect1"></div>
+		  <div class="rect2"></div>
+		  <div class="rect3"></div>
+		  <div class="rect4"></div>
+		  <div class="rect5"></div>
+		</div>
+	</div>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-wrapper">
+	
+		<a href="#main-page" class="navbar-brand">
+			<img src="https://lh3.googleusercontent.com/proxy/bfH3tZU2IxrUUEdhzpQKajVe7Eajj8-JhW_9z5ATIUSrYK-EUJRZm59sri7k2a4mJ2jMfWbP3X3DrhtJwtl6pmWk83IuV5I2YnNaHBDOVKeZ62rfDO6wlAs" style="height: 80px; width: auto; filter: hue-rotate(65deg);">
+		</a>
+
+		<div class="container d-flex justify-content-end">
+			<ul class="nav" id="navbar-links">
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">About</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Experience</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Projects</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Contact</a>
+			  </li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="jumbotron" id="main-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-flex" id="title-text">
+					<h4>Hi, my name is</h4>
+					<h1 class="mt-2">Philip Kung.</h1>
+					<h1 class="mt-1" style="color: #4F2F48;">I code for fun.</h1>
+					<div class="row" style="padding: 0px">
+						<div class="col-7">
+							<h3 class="mt-4">
+								I'm a sophomore studying Quantitative Finace at the University of Texas at Austin.
+								I consider myself a self-starter, an avid learner,
+								and a big dreamer.
+							</h3>
+							</div>
+						<div class="col"></div>
+					</div>
+
+		        	<div class="container-fluid justify-content-start mt-5" style="padding: 0px;">
+		        		<button class="btn btn-primary btn-lg mr-5" id="main-button">Get in Touch</button>
+		        		<button class="btn btn-primary btn-lg" id="main-button">View my Resume</button>	
+		        	</div>
+
+		        	<div class="container-fluid d-flex justify-content-start mt-5" style="padding: 0px;">
+						<a href="https://github.com/philipk19238/portfolio" target = "_blank"><i class="fab fa-github-alt fa-2x mr-5"></i></a>
+			            <a href="https://www.linkedin.com/in/philipkung/" target="_blank"><i class="fab fa-linkedin fa-2x mr-5"></i></a>
+			            <a href="https://www.instagram.com/pkung67/" target="_blank"><i class="fab fa-instagram fa-2x mr-5"></i></a>
+			            <a href="https://www.facebook.com/philip.kung.33" target="_blank"><i class="fab fa-facebook fa-2x mr-5"></i></a>
+		        	</div>
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="jumbotron mt-5">
+		<div class="container">
+			<h1 id="about" class="sub-header">01. About Me</h1>
+		</div>
+
+		<div class="container d-flex align-items-start mt-5">
+			<div class="container">
+				<p>
+					Hey y'all! I'm Philip, a sophomore studying Quantitative Finance
+					at the University of Texas at Austin.
+				</p>
+
+				<p>
+					I enjoy all things Python - from creating trading bots using
+					Pandas, NumPy, and scikit-learn to deploying REST APIs on 
+					AWS Lambda - the functionality and flexibility of the language
+					is unparalleled. 
+				</p>
+
+				<p>
+					I am currently pursuing opportunities in both finance and software engineering. If you are a recruiter or know of a position available, please don't hesitate to reach out. I specialize in creating scalable full-stack web applications, analyzing & cleaning data, and automating back office workflow.
+				</p>
+
+				<p>
+					Here are also some technologies I've been working with recently:
+				</p>
+
+				<div class="container d-flex align-items-center justify-content-start" style="padding: 0px;">
+
+					<ul class="mt-3 no_bullet" style="margin-left: 20px;">
+						<li class="bullet-icon">JavaScript (ES6+)</li>
+						<li class="bullet-icon">HTML & CSS</li>
+						<li class="bullet-icon">Flask</li>
+					</ul>
+
+					<ul class="ml-5 mt-3 no_bullet">
+						<li class="bullet-icon">Python</li>
+						<li class="bullet-icon">Pandas</li>
+						<li class="bullet-icon">Keras</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="container d-flex justify-content-center" style="padding: 0px;">
+				<img src="static/images/bigbend.jpg" style="height: 300px; width: auto;" class="frame">
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron mb-5 mt-5">
+		<div class="container">
+			<h1 class="sub-header" style="text-align: center;">02. Where I've Worked</h1>
+		</div>
+
+		<div class="container d-flex align-items-start mt-5">
+
+			<div class="list-group">
+				  <a class="list-group-item list-group-item-action active" onclick="show_elem(this.id)" id="saveday;filler">
+				    SaveDay
+				  </a>
+				  <a class="list-group-item list-group-item-action" onclick="show_elem(this.id)" id="lindale;filler">Lindale Partners</a>
+				  <a class="list-group-item list-group-item-action" onclick="show_elem(this.id)" id="sabbath;filler">Kenneth M. Sabath Law Offices</a>
+			</div>
+
+				<div class="container">
+
+				<div class="card resume ml-4" id="saveday">
+					<div class="card-header resume">
+						<h1 id="job-title">SWE Intern <b>@ SaveDay</b></h1>
+						<h4 id="job-dates">Sep 2019 - Present</h4>
+					</div>
+					<div class="card-body resume" style="padding: 0px;">
+						<ul class="no_bullet mt-2" style="margin-left: 40px;">
+							<li class="bullet-icon mb-1 resume">Migrated rebalancing algorithm from Google Sheets to Pandas consequently reducing average trading latency times by 90x</li>
+							<li class="bullet-icon mb-1 resume">Optimized data processing operations by rewriting code to include vectorization functions resulting in 10x increase in speed</li>
+							<li class="bullet-icon mb-1 resume">Coded and deployed a Selenium bot that validated the company’s production website thus eliminating need for manual testing </li>
+							<li class="bullet-icon mb-1 resume">Eliminated an average of 480 man-hours of manual IT labor annually by creating and distributing scripts that automated 
+							back office functions such as data pulls, creation of amortization schedules, and fee collections using Pandas and PyMongo 
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card resume ml-4 d-none" id="lindale">
+					<div class="card-header resume">
+						<h1 id="job-title">PE Intern <b>@ Lindale Partners</b></h1>
+						<h4 id="job-dates">Jan 2020 - Apr 2020</h4>
+					</div>
+					<div class="card-body resume" style="padding: 0px;">
+						<ul class="no_bullet mt-2" style="margin-left: 40px;">
+							<li class="bullet-icon mb-1 resume">Perform primary and secondary research to identify attractive industries & businesses based off investment criteria</li>
+							<li class="bullet-icon mb-1 resume">Conduct due diligence on prospective acquisitions, including analysis of business model, competitors, vendors, and customers</li>
+							<li class="bullet-icon mb-1 resume">Coded multiple web scrapers that returned the contact information of business owners, business brokers, and investment bankers </li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card resume ml-4 d-none" id="sabbath">
+					<div class="card-header resume">
+						<h1 id="job-title">Paralegal <b>@ Kenneth M. Sabath Law Offices</b></h1>
+						<h4 id="job-dates">Mar 2018 - Aug 2019</h4>
+					</div>
+					<div class="card-body resume" style="padding: 0px;">
+						<ul class="no_bullet mt-2" style="margin-left: 40px;">
+							<li class="bullet-icon mb-1 resume">Reduced legal expenses by 90% through establishing a new process to acquire medical bills & records</li>
+							<li class="bullet-icon mb-1 resume">Negotiated with insurance adjusters, medical providers, and subrogation/collection agencies to reach fair settlement</li>
+							<li class="bullet-icon mb-1 resume">Created a system to optimize the negotiation pipeline – decreased negotiation timeline with third party insurance by 25%</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+			
+	</div>
+
+	<div class="jumbotron">
+		
+	</div>
+	
+		
+
+
+
+
+	<script type="text/javascript">
+
+		var curr_resume = 'saveday'
+
+		setTimeout(function(){
+
+		var loading = document.getElementById('screen-loader');
+		loading.classList.add('d-none');
+
+		var page = document.getElementById('main-page');
+		page.classList.remove('d-none');
+		}, 3000);
+
+		function show_elem(id){
+
+			var split = id.split(';')[0];
+
+			var curr_elem = document.getElementById(split);
+
+			var prev_elem = document.getElementById(curr_resume);
+
+			var prev_id = `${curr_resume};filler`;
+
+			if (prev_elem === curr_elem){
+				return;
+			}
+
+			else {
+
+			curr_elem.classList.remove('d-none');
+
+			document.getElementById(id).classList.add('active');
+
+			prev_elem.classList.add('d-none');
+
+			document.getElementById(prev_id).classList.remove('active');
+
+			curr_resume = split;
+
+			}
+
+		}
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+					

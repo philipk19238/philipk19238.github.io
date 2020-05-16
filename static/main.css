@@ -1,0 +1,249 @@
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: blue;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+#title-text h4 {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#title-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+#title-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#main-button {
+  background: purple;
+  color: white;
+  border: 2px solid purple;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+}
+
+#main-button:hover {
+  background: white;
+  color: black;
+
+}
+
+.jumbotron {
+  background: white;
+}
+
+#jumping-image {
+  height: 500px;
+  width: auto;
+}
+
+#navbar-links a{
+  font-family: 'Fira Code', monospace;
+  color: #4F2F48;
+}
+
+#navbar-links a:hover {
+  font-weight: 600;
+  color: purple;
+}
+
+.sub-header {
+  font-family: 'Fira Code', monospace;
+  color: purple;
+  font-size: 40px;
+}
+
+#about-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+b {
+  color: purple;
+  font-weight: 700;
+}
+
+ul.no_bullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.bullet-icon:before {
+  content: '\1F4CD';
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.bullet-icon {
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+}
+
+.frame {
+  box-shadow:
+    20px 20px 0 -3.5px white,
+    20px 20px 0 0 purple;
+    
+  transition: box-shadow ease-in 150ms;
+
+  border: 2px solid #4F2F48;
+
+  filter: hue-rotate(256deg);
+
+}
+
+.frame:hover {
+  box-shadow:
+    10px 10px 0 -5px white,
+    10px 10px 0 0 purple;
+    filter: opacity(1);
+}
+
+.container {
+  padding: 0px;
+}
+
+.list-group {
+  display: inline-block;
+  border: none;
+
+}
+
+#job-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.card.resume {
+  border: none;
+  background-color: white;
+}
+
+.card-header.resume {
+  border: none;
+  background-color: white;
+}
+
+#job-dates {
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+}
+
+.bullet-icon.resume {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.list-group a {
+  border-left: 3px solid WhiteSmoke;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  color: grey;
+
+}
+
+.list-group a:hover {
+  color: #ff2681;
+  background-color:WhiteSmoke;
+
+}
+
+.active {
+  color: #ff2681 !important;
+  background-color: transparent !important;
+  border-left: 3px solid #ff2681 !important;
+
+}
+
+.fa-github-alt:hover{
+  color: #F1502F;
+}
+
+.fa-github-alt {
+  color: purple;
+}
+
+.fa-instagram {
+  color: purple;
+}
+
+.fa-instagram:hover{
+  color: #e1306c;
+}
+
+.fa-linkedin {
+  color: purple;
+}
+
+.fa-facebook {
+  color: purple;
+}
+
+.fa-linkedin:hover{
+  color: #2867B2;
+}
+
+.fa-facebook:hover{
+  color: #2867B2;
+}
