@@ -14,8 +14,7 @@
 <body>
 
 	<div class="container-fluid d-flex justify-content-center">
-
-		<div class="sk-cube-grid" style="margin-top: 40vh;" id="screen-loader">
+		<div class="sk-cube-grid d-none" style="margin-top: 40vh;" id="screen-loader">
 		  <div class="sk-cube sk-cube1"></div>
 		  <div class="sk-cube sk-cube2"></div>
 		  <div class="sk-cube sk-cube3"></div>
@@ -26,10 +25,9 @@
 		  <div class="sk-cube sk-cube8"></div>
 		  <div class="sk-cube sk-cube9"></div>
 		</div>
-
 	</div>
 	
-	<nav class="navbar navbar-expand-lg sticky-top d-none" id="navbar-wrapper" style="background-color: white;">
+	<nav class="navbar navbar-expand-lg sticky-top" id="navbar-wrapper" style="background-color: white;">
 	
 		<a href="#main-page" class="navbar-brand">
 			<img src="https://github.com/philipk19238/philipk19238.github.io/blob/master/static/images/logo.PNG?raw=true" style="height: 60px; width: auto; filter: hue-rotate(65deg);">
@@ -44,7 +42,7 @@
 			    <a class="nav-link" href="#experience">Experience</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Projects</a>
+			    <a class="nav-link" href="#project">Projects</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link" href="#">Contact</a>
@@ -54,13 +52,13 @@
 	</nav>
 
 
-	<div class="jumbotron d-none" id="main-page">
+	<div class="jumbotron" id="main-page">
 		<div class="container">
 			<div class="row">
 				<div class="col-flex" id="title-text">
 					<h4>Hi, my name is</h4>
 					<h1 class="mt-2">Philip Kung.</h1>
-					<h1 class="mt-1" style="color: #4F2F48;">I code for fun.</h1>
+					<h1 class="mt-1" style="color: #4F2F48;">I enjoy building cool things.</h1>
 					<div class="row" style="padding: 0px">
 						<div class="col-7">
 							<h3 class="mt-4">
@@ -90,9 +88,9 @@
 		</div>
 	</div>
 
-	<div class="jumbotron mt-5 d-none" id="about">
+	<div class="jumbotron mt-5" id="about">
 		<div class="container">
-			<h1 id="about" class="sub-header">01. About Me</h1>
+			<h1 id="about" class="sub-header mt-5">01. About Me</h1>
 		</div>
 
 		<div class="container d-flex align-items-start mt-5">
@@ -141,9 +139,9 @@
 		</div>
 	</div>
 
-	<div class="jumbotron mb-5 mt-5 d-none" id="experience">
+	<div class="jumbotron mb-5 mt-5" id="experience">
 		<div class="container">
-			<h1 class="sub-header" style="text-align: center;">02. Where I've Worked</h1>
+			<h1 class="sub-header mt-5" style="text-align: center;">02. Where I've Worked</h1>
 		</div>
 
 		<div class="container d-flex align-items-start mt-5">
@@ -209,8 +207,391 @@
 			
 	</div>
 
-	<div class="jumbotron">
+	<div class="jumbotron mt-5 mb-5" id="project">
+
+		<div class="container">
+			<h1 class="sub-header mt-5">03. Projects</h1>
+		</div>
+
+		<div class="container mt-5">
+
+			<div class="card-deck">
+
+				<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/ffmpeg-python-wrapper" target="_blank"><h1 class="repo-title">ffmpeg-python-wrapper</h1></a>
+					</div>
+						<p class="repo-body mt-2">
+							Open source lightweight python binder built for the FFmpeg library that focuses on maximizing functionality while keeping the syntax pythonic, simple, and clear.
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #2867B2;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Python</p>
+
+			                <svg aria-hidden="true" class="repo-star-svg" height="16" role="img" viewBox="0 0 14 16" width="14" fill="rgb(106, 115, 125)">
+				                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+				            </svg>
+
+							<p style="margin: 0px;" class="repo-elem mr-4">19</p>
+
+						</div>
+					</div>
+
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">FFmpeg</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">subprocess</p>
+					</div>
+				</div>
+
+				<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/slowed-and-reverbed" target="_blank"><h1 class="repo-title">slowed-and-reverbed</h1></a>
+					</div>
+						<p class="repo-body mt-2">
+							Web application that uses Fast Fourier Transforms to convolve audio signals with an impulse while simultaneously reducing the chunk rate thus creating a "slowed and reverbed" effect
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #f0db4f;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Python</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">1</p>
+						</div>
+					</div>
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">NumPy</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">SciPy</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">JS</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">CSS</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card-deck mt-3">
+
+				<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/send-your-friends-the-script-from-the-bee-movie-one-word-at-a-time" target="_blank"><h1 class="repo-title">send-your-friends-the-script-to-the-bee-movie-one-word-at-a-time
+						</h1></a>
+					</div>
+						<p class="repo-body mt-2">
+							Simple script that uses the fbchat API to send your friends the script to the bee movie one word at a time.
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #2867B2;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Python</p>
+
+			                <svg aria-hidden="true" class="repo-star-svg" height="16" role="img" viewBox="0 0 14 16" width="14" fill="rgb(106, 115, 125)">
+				                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+				            </svg>
+
+							<p style="margin: 0px;" class="repo-elem mr-4">29</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">43</p>
+						</div>
+					</div>
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">fbchat</p>
+					</div>
+				</div>
+								<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/Fuel-For-Thought" target="_blank"><h1 class="repo-title">Fuel-For-Thought</h1></a>
+					</div>
+						<p class="repo-body mt-2">
+							An AI and hashgraph based platform that allows energy workers to hone in on their technical skills while connecting them with other workers and service companies looking to hire.
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #f0db4f;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Javascript</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">1</p>
+						</div>
+					</div>
+
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Node</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">scikit-learn</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">CSS</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Hedera</p>
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<div class="card-deck mt-3 d-none" id="hidden-deck">
+
+								<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+							<a href="https://github.com/philipk19238/Bilingual-Buddy" target="_blank"><h1 class="repo-title">Bilingual-Buddies</h1></a>
+						</div>
+
+						<p class="repo-body mt-2">
+							Interactive web application that connects multilingual travelers
+							with American Airlines passengers that need help with translation and navigation needs at foreign airports.
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #f0db4f;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">JavaScript</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">1</p>
+						</div>
+					</div>
+
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">CSS</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
+					</div>
+
+				</div>
+
+				<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/browser-talk" target='_blank'><h1 class="repo-title">browser-talk</h1></a>
+						</div>
+						<p class="repo-body mt-2">
+							A tool that allows users to navigate the web hands-free. Voice commands are streamed through a speech to text API and are then performed using Selenium. 
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #2867B2;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Python</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">1</p>
+						</div>
+					</div>
+
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">PyAudio</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Selenium</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">GC</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="card-deck mt-3 d-none" id="hidden-deck-two">
+
+				<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/trump-volatility-analysis" target="_blank"><h1 class="repo-title">trump-volatility-analysis</h1></a>
+					</div>
+						<p class="repo-body mt-2">
+							An analysis of the effect President Donald Trump's tweets have on the volatility of the Dow Jones Industrial Index. Tweet data is scraped from Twitter and stock data is scraped from Yahoo Finance.
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #cc5500;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Jupyter Notebook</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">1</p>
+						</div>
+					</div>
+
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">NumPy</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Matplotlib</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Pandas</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Selenium</p>
+					</div>
+
+				</div>
+
+				<div class="card project">
+					<div class="card-body">
+						<div class="container d-flex align-items-center">
+							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
+					            <path
+					              fill-rule="evenodd"
+					              d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+					            ></path>
+		          			</svg>
+						<a href="https://github.com/philipk19238/WorkLite-LeapHacks-Harish" target='_blank'><h1 class="repo-title">WorkLite</h1></a>
+						</div>
+						<p class="repo-body mt-2">
+							An end to end CRM solution for personal injury law firms that placed second at the LeapHacks Hackathon. Application includes a regression model to filter out "bad apple" clients. 
+						</p>
+
+						<div class="container d-flex align-items-center mt-4">
+              				<div class="language-color mr-2" style="background-color: #2867B2;);"></div>
+
+              				<p style="margin: 0px;" class="repo-elem mr-4">Python</p>
+
+              				<svg aria-hidden="true" class="repo-star-svg mr-2" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)">
+				                <path
+				                  fill-rule="evenodd"
+				                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+				                ></path>
+			                </svg>
+
+							<p style="margin: 0px;" class="repo-elem">1</p>
+						</div>
+					</div>
+
+					<div class="card-footer d-flex align-items-start">
+						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">JS</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
+						<p class="repo-footer mr-3" style="margin: 0px;">scikit-learn</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<p style="text-align: center;" class="mt-5">
+			<button class="btn btn-primary btn-lg d-none" id="show-less" onclick="show_less()">Show Less</button>
+			<button class="btn btn-primary btn-lg" id="show-more" onclick="show_more()">Show More</button>
+		</p>
 		
+	</div>
+
+	<div class="jumbotron mt-5 mb-5" id="contact">
+		<div class="container d-flex justify-content-center mt-5">
+			<h1 class="sub-header contact">04. Need a Coder?</h1>
+		</div>
+
+		<div class="container d-flex justify-content-center">
+			<h1 class="contact-text">Contact Me</h1>
+		</div>
+
+		<div class="container mt-4">
+
+			<p class="contact ml-5 mr-5">
+				I am currently open for internship and co-op opportunities for the summer & fall of 2020. If you are a recruiter or know of a position open in either finance or software engineering, please feel free to reach out. I am also available for independent consulting for the summer of 2020. I specialize in full-stack and DevOps roles and can automate back office workflow, code custom scripts, programs, and apps along with conducting code reviews and optimzation sessions.
+			</p>
+
+		</div>
+
+
+		<div class="container d-flex justify-content-center">
+			<a href="mailto:pkung67@utexas.edu"><button class="btn btn-lg btn-primary" id="contact-me">Say Howdy!</button></a>
+		</div>
+
+	</div>
+
+	<div class="jumbotron mt-5 d-flex align-items-end justify-content-center" style="height: 40vh; padding: 0px; border-top: none;">
+
+		<h3 id="footer" style="text-align: center; padding: 0px;">
+			Designed and Built by Philip Kung. All Rights Reserved.
+		</h3>
+
 	</div>
 	
 		
@@ -222,7 +603,7 @@
 
 		var curr_resume = 'saveday'
 
-		setTimeout(function(){
+		/*setTimeout(function(){
 
 		var loading = document.getElementById('screen-loader');
 
@@ -244,7 +625,7 @@
 
 		navbar.classList.remove('d-none');
 
-		}, 3000);
+		}, 3000);*/
 
 		function show_elem(id){
 
@@ -292,6 +673,33 @@
 
 		  prevScrollpos = currentScrollPos;
 		}
+
+		function show_less(){
+
+			var hidden_deck = document.getElementById('hidden-deck');
+			var hidden_deck_two = document.getElementById('hidden-deck-two');
+			var hidden_button = document.getElementById('show-less');
+			var show_button = document.getElementById('show-more');
+
+			hidden_deck.classList.add('d-none');
+			hidden_deck_two.classList.add('d-none');
+			hidden_button.classList.add('d-none');
+			show_button.classList.remove('d-none');
+		}
+
+		function show_more(){
+			var show_deck = document.getElementById('hidden-deck');
+			var show_deck_two = document.getElementById('hidden-deck-two');
+			var show_button = document.getElementById('show-less');
+			var hidden_button = document.getElementById('show-more');
+
+			show_deck.classList.remove('d-none');
+			show_deck_two.classList.remove('d-none');
+			show_button.classList.remove('d-none');
+			hidden_button.classList.add('d-none');
+		}
+
+
 
 	</script>
 
