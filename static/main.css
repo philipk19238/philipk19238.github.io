@@ -360,3 +360,50 @@ html {
   font-family: 'Fira Code', monospace;
   font-size: 13px;
 }
+
+#demo-slowed {
+  background: transparent;
+  color: purple;
+  border: 2px solid purple;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#demo-slowed:hover {
+  background: purple;
+  color: white;
+}
+
+#audio {
+    width: 40rem;
+    padding: 0px;
+}
+
+.card.video-body {
+    height: 20rem;
+    background-image: url('images/cassete.gif');
+    background: cover;
+    margin-left: 6vmax;
+    margin-right: 6vmax;
+    width: 22rem;
+    display: inline-block;
+}
+
+.modal-body.audio{
+    padding-bottom: 1.5vmax;
+    padding-top: 1.5vmax;
+}
+
+#slowed-container {
+  position: absolute;
+  left: 55%;
+  top: 75%;
+  z-index: 10;
+}
+
+
+
+

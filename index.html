@@ -8,13 +8,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/acebc5d574.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;&family=Hepta+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 	<title>Main Page</title>
 </head>
 <body>
 
 	<div class="container-fluid d-flex justify-content-center">
-		<div class="sk-cube-grid d-none" style="margin-top: 40vh;" id="screen-loader">
+		<div class="sk-cube-grid" style="margin-top: 40vh;" id="screen-loader">
 		  <div class="sk-cube sk-cube1"></div>
 		  <div class="sk-cube sk-cube2"></div>
 		  <div class="sk-cube sk-cube3"></div>
@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	
-	<nav class="navbar navbar-expand-lg sticky-top" id="navbar-wrapper" style="background-color: white;">
+	<nav class="navbar navbar-expand-lg sticky-top d-none" id="navbar-wrapper" style="background-color: white;">
 	
 		<a href="#main-page" class="navbar-brand">
 			<img src="https://github.com/philipk19238/philipk19238.github.io/blob/master/static/images/logo.PNG?raw=true" style="height: 60px; width: auto; filter: hue-rotate(65deg);">
@@ -45,14 +45,14 @@
 			    <a class="nav-link" href="#project">Projects</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Contact</a>
+			    <a class="nav-link" href="#contact">Contact</a>
 			  </li>
 			</ul>
 		</div>
 	</nav>
 
 
-	<div class="jumbotron" id="main-page">
+	<div class="jumbotron d-none" id="main-page">
 		<div class="container">
 			<div class="row">
 				<div class="col-flex" id="title-text">
@@ -88,7 +88,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron mt-5" id="about">
+	<div class="jumbotron mt-5 d-none" id="about">
 		<div class="container">
 			<h1 id="about" class="sub-header mt-5">01. About Me</h1>
 		</div>
@@ -139,7 +139,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron mb-5 mt-5" id="experience">
+	<div class="jumbotron mb-5 mt-5 d-none" id="experience">
 		<div class="container">
 			<h1 class="sub-header mt-5" style="text-align: center;">02. Where I've Worked</h1>
 		</div>
@@ -207,7 +207,7 @@
 			
 	</div>
 
-	<div class="jumbotron mt-5 mb-5" id="project">
+	<div class="jumbotron mt-5 mb-5 d-none" id="project">
 
 		<div class="container">
 			<h1 class="sub-header mt-5">03. Projects</h1>
@@ -217,7 +217,7 @@
 
 			<div class="card-deck">
 
-				<div class="card project">
+				<div class="card project" id="ffmpeg">
 					<div class="card-body">
 						<div class="container d-flex align-items-center">
 							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
@@ -252,8 +252,8 @@
 					</div>
 				</div>
 
-				<div class="card project">
-					<div class="card-body">
+				<div class="card project" id="slowed" onmouseover="show_demo();" onmouseleave="hide_demo();">
+					<div class="card-body" style="position: relative">
 						<div class="container d-flex align-items-center">
 							<svg aria-hidden="true" class="repo-svg" height="16" role="img" viewBox="0 0 12 16" width="12">
 					            <path
@@ -262,9 +262,10 @@
 					            ></path>
 		          			</svg>
 						<a href="https://github.com/philipk19238/slowed-and-reverbed" target="_blank"><h1 class="repo-title">slowed-and-reverbed</h1></a>
+
 					</div>
 						<p class="repo-body mt-2">
-							Web application that uses Fast Fourier Transforms to convolve audio signals with an impulse while simultaneously reducing the chunk rate thus creating a "slowed and reverbed" effect
+							Web application that uses Fast Fourier Transforms to convolve audio signals with an impulse while simultaneously reducing the chunk rate thus creating a "slowed and reverbed" effect.
 						</p>
 
 						<div class="container d-flex align-items-center mt-4">
@@ -279,7 +280,10 @@
 				                ></path>
 			                </svg>
 
-							<p style="margin: 0px;" class="repo-elem">1</p>
+							<p style="margin: 0px;" class="repo-elem mr-5">1</p>
+						</div>
+						<div class="container" id="slowed-container">
+							<button class="btn btn-md btn-primary ml-5 d-none" id="demo-slowed" onclick="play_music();">try me!</button>
 						</div>
 					</div>
 					<div class="card-footer d-flex align-items-start">
@@ -371,9 +375,7 @@
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Node</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">scikit-learn</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">CSS</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Hedera</p>
 					</div>
 
@@ -420,7 +422,6 @@
 					<div class="card-footer d-flex align-items-start">
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">CSS</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
 					</div>
 
@@ -502,7 +503,6 @@
 					</div>
 
 					<div class="card-footer d-flex align-items-start">
-						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">NumPy</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Matplotlib</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Pandas</p>
@@ -562,7 +562,7 @@
 		
 	</div>
 
-	<div class="jumbotron mt-5 mb-5" id="contact">
+	<div class="jumbotron mt-5 mb-5 d-none" id="contact">
 		<div class="container d-flex justify-content-center mt-5">
 			<h1 class="sub-header contact">04. Need a Coder?</h1>
 		</div>
@@ -588,22 +588,50 @@
 
 	<div class="jumbotron mt-5 d-flex align-items-end justify-content-center" style="height: 40vh; padding: 0px; border-top: none;">
 
-		<h3 id="footer" style="text-align: center; padding: 0px;">
+		<h3 id="footer" style="text-align: center; padding: 0px;" class="d-none">
 			Designed and Built by Philip Kung. All Rights Reserved.
 		</h3>
 
 	</div>
-	
-		
 
+<div class="modal fade bd-example-modal-lg" id="playModal" tabindex="-1" role="dialog" aria-labelledby="playModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" id="close_button" class="dot">&times;</span>
+                    </button> 
+                </div>
 
-
+                <div class="modal-body audio">
+                    <div class="row body audio">
+                        <div class="col" style="text-align: center;">
+                            <div class='card video-body'></div>
+                            <div class="row" style="margin-bottom: 0px; padding: 0px;">
+                                <div class="col">
+                                    <h4 id=song_name style="text-align: center;" class="m-3">One Man Band (slowed + reverbed)</h4>
+                                    <p style="text-align: center; color: #FC1880; font-family: 'Roboto', sans-serif;">Now Playing
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center" style="padding: 0px; margin-top: 0px; outline: none; border: none;">
+                                <audio controls id="audio" style="outline: none; border: none;">
+                                    <source src="static/images/onemanband.mp3" type="audio/mp3" id="music_player">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="border-top: none;"></div>
+            </div>
+        </div>
+    </div>
 
 	<script type="text/javascript">
 
-		var curr_resume = 'saveday'
+		var curr_resume = 'saveday';
 
-		/*setTimeout(function(){
+		setTimeout(function(){
 
 		var loading = document.getElementById('screen-loader');
 
@@ -615,6 +643,12 @@
 
 		var navbar = document.getElementById('navbar-wrapper');
 
+		var project = document.getElementById('project');
+
+		var contact = document.getElementById('contact');
+
+		var footer_final = document.getElementById('footer');
+
 		loading.classList.add('d-none');
 
 		main.classList.remove('d-none');
@@ -625,7 +659,13 @@
 
 		navbar.classList.remove('d-none');
 
-		}, 3000);*/
+		project.classList.remove('d-none');
+
+		contact.classList.remove('d-none');
+
+		footer_final.classList.remove('d-none');
+
+		}, 3000);
 
 		function show_elem(id){
 
@@ -655,7 +695,7 @@
 
 			}
 
-		}
+		};
 
 		var prevScrollpos = window.pageYOffset;
 
@@ -672,7 +712,7 @@
 		  }
 
 		  prevScrollpos = currentScrollPos;
-		}
+		};
 
 		function show_less(){
 
@@ -685,7 +725,7 @@
 			hidden_deck_two.classList.add('d-none');
 			hidden_button.classList.add('d-none');
 			show_button.classList.remove('d-none');
-		}
+		};
 
 		function show_more(){
 			var show_deck = document.getElementById('hidden-deck');
@@ -697,9 +737,19 @@
 			show_deck_two.classList.remove('d-none');
 			show_button.classList.remove('d-none');
 			hidden_button.classList.add('d-none');
-		}
+		};
 
+		function show_demo(){
+			document.getElementById('demo-slowed').classList.remove('d-none');
+		};
 
+		function hide_demo(){
+			document.getElementById('demo-slowed').classList.add('d-none');
+		};
+
+		function play_music(){
+			$('#playModal').modal();
+		};
 
 	</script>
 
