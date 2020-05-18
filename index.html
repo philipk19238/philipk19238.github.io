@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="static/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -55,27 +55,26 @@
 	<div class="jumbotron d-none" id="main-page">
 		<div class="container">
 			<div class="row">
-				<div class="col-flex" id="title-text">
+				<div class="col-flex col-sm-auto col-md-auto" id="title-text">
 					<h4>Hi, my name is</h4>
 					<h1 class="mt-2">Philip Kung.</h1>
 					<h1 class="mt-1" style="color: #4F2F48;">I enjoy building cool things.</h1>
 					<div class="row" style="padding: 0px">
-						<div class="col-7">
+						<div class="col col-sm-auto col-lg-7">
 							<h3 class="mt-4">
 								I'm a sophomore studying Quantitative Finance at the University of Texas at Austin.
 								I consider myself a self-starter, an avid learner,
 								and a big dreamer.
 							</h3>
 							</div>
-						<div class="col"></div>
 					</div>
 
-		        	<div class="container-fluid justify-content-start mt-5" style="padding: 0px;">
+		        	<div class="container-fluid d-flex justify-content-lg-start justify-content-md-start justify-content-sm-center mt-5 justify-content-xs-center flex-wrap" style="padding: 0px;">
 		        		<a class="btn btn-primary btn-lg mr-5" id="main-button" href="mailto:pkung67@utexas.edu" target="_blank" type="button">Get in Touch</a>
 		        		<a class="btn btn-primary btn-lg" id="main-button" href="https://drive.google.com/file/d/1eOvCP0G5z0mMLqeyiURAmJYKL5s_8MYw/view?usp=sharing" target="_blank" type="button">View my Resume</a>	
 		        	</div>
 
-		        	<div class="container-fluid d-flex justify-content-start mt-5" style="padding: 0px;">
+		        	<div class="container-fluid d-flex justify-content-lg-start justify-content-sm-center justify-content-md-start justify-content-xs-center mt-5" style="padding: 0px;">
 						<a href="https://github.com/philipk19238" target = "_blank"><i class="fab fa-github-alt fa-2x mr-5"></i></a>
 			            <a href="https://www.linkedin.com/in/philipkung/" target="_blank"><i class="fab fa-linkedin fa-2x mr-5"></i></a>
 			            <a href="https://www.instagram.com/pkung67/" target="_blank"><i class="fab fa-instagram fa-2x mr-5"></i></a>
@@ -90,10 +89,10 @@
 
 	<div class="jumbotron mt-5 d-none" id="about">
 		<div class="container">
-			<h1 id="about" class="sub-header mt-5">01. About Me</h1>
+			<h1 id="about" class="sub-header mt-5 text-sm-center">01. About Me</h1>
 		</div>
 
-		<div class="container d-flex align-items-start mt-5">
+		<div class="container d-flex flex-column flex-lg-row align-items-start">
 			<div class="container">
 				<p id="about-text">
 					Hey y'all! I'm Philip, a sophomore studying Quantitative Finance
@@ -133,7 +132,7 @@
 
 			</div>
 
-			<div class="container d-flex justify-content-center" style="padding: 0px;">
+			<div class="container d-flex justify-content-center p-5" style="padding: 0px;">
 				<img src="https://github.com/philipk19238/philipk19238.github.io/blob/master/static/images/bigbend.JPG?raw=true" style="height: 300px; width: auto;" class="frame">
 			</div>
 		</div>
@@ -144,7 +143,7 @@
 			<h1 class="sub-header mt-5" style="text-align: center;">02. Where I've Worked</h1>
 		</div>
 
-		<div class="container d-flex align-items-start mt-5">
+		<div class="container d-flex align-items-start mt-5 flex-lg-row flex-column">
 
 			<div class="list-group">
 				  <button class="list-group-item list-group-item-action active" onclick="show_elem(this.id)" id="saveday;filler">
@@ -210,7 +209,7 @@
 	<div class="jumbotron mt-5 mb-5 d-none" id="project">
 
 		<div class="container">
-			<h1 class="sub-header mt-5">03. Projects</h1>
+			<h1 class="sub-header mt-5 text-sm-center">03. Projects</h1>
 		</div>
 
 		<div class="container mt-5">
@@ -246,7 +245,7 @@
 						</div>
 					</div>
 
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">FFmpeg</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">subprocess</p>
 					</div>
@@ -286,7 +285,7 @@
 							<button class="btn btn-md btn-primary ml-5 d-none" id="demo-slowed" onclick="play_music();">try me!</button>
 						</div>
 					</div>
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">NumPy</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">SciPy</p>
@@ -336,7 +335,7 @@
 							<p style="margin: 0px;" class="repo-elem">43</p>
 						</div>
 					</div>
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">fbchat</p>
 					</div>
 				</div>
@@ -371,12 +370,10 @@
 						</div>
 					</div>
 
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Node</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">scikit-learn</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">Hedera</p>
 					</div>
 
 				</div>
@@ -419,7 +416,7 @@
 						</div>
 					</div>
 
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Python</p>
@@ -458,11 +455,10 @@
 						</div>
 					</div>
 
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">PyAudio</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Selenium</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">GC</p>
 					</div>
 
 				</div>
@@ -502,13 +498,11 @@
 						</div>
 					</div>
 
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">NumPy</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Matplotlib</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Pandas</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">Selenium</p>
 					</div>
-
 				</div>
 
 				<div class="card project">
@@ -542,9 +536,8 @@
 						</div>
 					</div>
 
-					<div class="card-footer d-flex align-items-start">
+					<div class="card-footer d-flex align-items-start flex-wrap">
 						<p class="repo-footer mr-3" style="margin: 0px;">Flask</p>
-						<p class="repo-footer mr-3" style="margin: 0px;">JS</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">Firebase</p>
 						<p class="repo-footer mr-3" style="margin: 0px;">scikit-learn</p>
 					</div>
